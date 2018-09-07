@@ -1,5 +1,5 @@
 Deface::Override.new(virtual_path: 'spree/admin/products/_form',
-                     name: 'add_publishable_to_products_edit',
+                     name: 'add_publishable_to_product_edit',
                      insert_before: "[data-hook='admin_product_form_promotionable']",
                      text: "<div data-hook='admin_product_form_publishable'>
                               <%= f.field_container :publishable, class: ['form-group'] do %>
