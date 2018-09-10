@@ -9,5 +9,5 @@ Deface::Override.new(virtual_path: 'spree/admin/products/index',
 Deface::Override.new(virtual_path: 'spree/admin/products/index',
                      name: 'add_publishable_table_column_to_product_index',
                      insert_after: "[data-hook='admin_products_index_rows'] td:nth-child(4)",
-                     text: "<td class='text-center'><%= product.publishing_status %></td>"
+                     text: "<td class='text-center'><%= publishing_status(product) %></td>"
                     )
